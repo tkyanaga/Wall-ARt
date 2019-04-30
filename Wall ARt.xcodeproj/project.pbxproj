@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B29413A22781262007DCAC5 /* ColorPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29413922781262007DCAC5 /* ColorPickViewController.swift */; };
+		8B29413C227864D5007DCAC5 /* Assets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B29413B227864D5007DCAC5 /* Assets.scnassets */; };
 		8BCB40C8226F2C54000951F2 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB40C7226F2C54000951F2 /* Plane.swift */; };
 		8BCB40CA226F2D8E000951F2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB40C9226F2D8E000951F2 /* Utilities.swift */; };
 		8BD9B997226A60B0003548CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9B996226A60B0003548CD /* AppDelegate.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B29413922781262007DCAC5 /* ColorPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickViewController.swift; sourceTree = "<group>"; };
+		8B29413B227864D5007DCAC5 /* Assets.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Assets.scnassets; sourceTree = "<group>"; };
 		8BCB40C7226F2C54000951F2 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		8BCB40C9226F2D8E000951F2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		8BD9B993226A60B0003548CD /* Wall ARt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wall ARt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,10 +108,12 @@
 				8BD9B996226A60B0003548CD /* AppDelegate.swift */,
 				8BD9B998226A60B0003548CD /* art.scnassets */,
 				8BD9B99A226A60B0003548CD /* ViewController.swift */,
+				8B29413922781262007DCAC5 /* ColorPickViewController.swift */,
 				8BCB40C7226F2C54000951F2 /* Plane.swift */,
 				8BCB40C9226F2D8E000951F2 /* Utilities.swift */,
 				8BD9B99C226A60B0003548CD /* Main.storyboard */,
 				8BD9B99F226A60B4003548CD /* Assets.xcassets */,
+				8B29413B227864D5007DCAC5 /* Assets.scnassets */,
 				8BD9B9A4226A60B4003548CD /* Info.plist */,
 			);
 			path = "Wall ARt";
@@ -238,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B29413C227864D5007DCAC5 /* Assets.scnassets in Resources */,
 				8BD9B999226A60B0003548CD /* art.scnassets in Resources */,
 				8BD9B9A0226A60B4003548CD /* Assets.xcassets in Resources */,
 				8BD9B99E226A60B0003548CD /* Main.storyboard in Resources */,
@@ -267,6 +274,7 @@
 			files = (
 				8BD9B99B226A60B0003548CD /* ViewController.swift in Sources */,
 				8BCB40C8226F2C54000951F2 /* Plane.swift in Sources */,
+				8B29413A22781262007DCAC5 /* ColorPickViewController.swift in Sources */,
 				8BCB40CA226F2D8E000951F2 /* Utilities.swift in Sources */,
 				8BD9B997226A60B0003548CD /* AppDelegate.swift in Sources */,
 			);

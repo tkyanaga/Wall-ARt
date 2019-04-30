@@ -7,24 +7,21 @@ Convenience class for visualizing Plane extent and geometry
 
 import ARKit
 
-// Convenience extension for colors defined in asset catalog.
-extension UIColor {
-    static let planeColor = UIColor(named: "planeColor")!
-}
-
 class Plane: SCNNode {
-    
+    var color = UIColor()
+
     let meshNode: SCNNode
     let extentNode: SCNNode
     var classificationNode: SCNNode?
     
     /// - Tag: VisualizePlane
-    init(anchor: ARPlaneAnchor, in sceneView: ARSCNView) {
+    init(anchor: ARPlaneAnchor, in sceneView: ARSCNView, wallColor: UIColor) {
         
         #if targetEnvironment(simulator)
         #error("ARKit is not supported in iOS Simulator. Connect a physical iOS device and select it as your Xcode run destination, or select Generic iOS Device as a build-only destination.")
         #else
 
+        color = wallColor
         // Create a mesh to visualize the estimated shape of the plane.
         guard let meshGeometry = ARSCNPlaneGeometry(device: sceneView.device!)
             else { fatalError("Can't create plane geometry") }
@@ -73,8 +70,7 @@ class Plane: SCNNode {
         // Use color and blend mode to make planes stand out.
         guard let material = meshNode.geometry?.firstMaterial
             else { fatalError("ARSCNPlaneGeometry always has one material") }
-        let TKcolor = UIColor(rgb: 0x0ed162)
-        material.diffuse.contents = TKcolor
+        material.diffuse.contents = color
     }
     
     private func setupExtentVisualStyle() {
@@ -84,7 +80,7 @@ class Plane: SCNNode {
         guard let material = extentNode.geometry?.firstMaterial
             else { fatalError("SCNPlane always has one material") }
         
-        material.diffuse.contents = UIColor.planeColor
+        material.diffuse.contents = UIColor.black
 
         // Use a SceneKit shader modifier to render only the borders of the plane.
         guard let path = Bundle.main.path(forResource: "wireframe_shader", ofType: "metal", inDirectory: "Assets.scnassets")
@@ -103,7 +99,7 @@ class Plane: SCNNode {
 
         let textNode = SCNNode(geometry: textGeometry)
         // scale down the size of the text
-        textNode.simdScale = float3(0.0005)
+        textNode.simdScale = float3(repeating: 0.0005)
         
         return textNode
     }
