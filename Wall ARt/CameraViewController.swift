@@ -33,6 +33,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         super.viewDidLoad()
         colorCrosshair.center = self.view.center
         
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
