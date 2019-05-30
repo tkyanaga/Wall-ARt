@@ -91,6 +91,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FP-aP-xHu">
                                 <rect key="frame" x="132" y="373" width="150" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
                                 <state key="normal" backgroundImage="crosshair"/>
                                 <connections>
                                     <action selector="colorCrosshair:" destination="2Ih-w6-zCc" eventType="touchUpInside" id="rk4-Cj-9vc"/>
@@ -123,6 +126,10 @@
                                     <segue destination="sBX-bH-g51" kind="show" id="5X9-2x-q5P"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-Jb-7eR">
+                                <rect key="frame" x="77" y="373" width="170" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -139,7 +146,7 @@
                     </view>
                     <connections>
                         <outlet property="cameraView" destination="MLC-qY-i1H" id="PZG-er-8Zv"/>
-                        <outlet property="colorCrosshair" destination="9FP-aP-xHu" id="xXG-ng-RMl"/>
+                        <outlet property="colorCrosshair" destination="dJi-Jb-7eR" id="kUC-3y-yLo"/>
                         <outlet property="colorText" destination="7rW-Zd-RUx" id="CNp-R5-tzC"/>
                         <outlet property="colorView" destination="p3r-Ds-wff" id="xgu-hb-az3"/>
                     </connections>

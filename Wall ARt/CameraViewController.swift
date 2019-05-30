@@ -21,7 +21,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var colorView: UIImageView!
     @IBOutlet weak var colorText: UITextView!
-    @IBOutlet weak var colorCrosshair: UIButton!
+    @IBOutlet weak var colorCrosshair: UIImageView!
+    
     
     var captureSession: AVCaptureSession!
     var stillImageOutput: AVCapturePhotoOutput!
@@ -31,6 +32,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         colorCrosshair.center = self.view.center
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
