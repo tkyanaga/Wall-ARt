@@ -18,6 +18,8 @@
 		8BD9B9A0226A60B4003548CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD9B99F226A60B4003548CD /* Assets.xcassets */; };
 		8BD9B9AE226A60B4003548CD /* Wall_ARtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9B9AD226A60B4003548CD /* Wall_ARtTests.swift */; };
 		8BD9B9B9226A60B4003548CD /* Wall_ARtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9B9B8226A60B4003548CD /* Wall_ARtUITests.swift */; };
+		8BE92A482282808A002ED420 /* CaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE92A472282808A002ED420 /* CaptureManager.swift */; };
+		8BFE51B2227AD77000722E6D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE51B1227AD77000722E6D /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		8BD9B9B4226A60B4003548CD /* Wall ARtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wall ARtUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD9B9B8226A60B4003548CD /* Wall_ARtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall_ARtUITests.swift; sourceTree = "<group>"; };
 		8BD9B9BA226A60B4003548CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE92A472282808A002ED420 /* CaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureManager.swift; sourceTree = "<group>"; };
+		8BFE51B1227AD77000722E6D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				8BCB40C7226F2C54000951F2 /* Plane.swift */,
 				8BCB40C9226F2D8E000951F2 /* Utilities.swift */,
 				8BD9B99C226A60B0003548CD /* Main.storyboard */,
+				8BFE51B1227AD77000722E6D /* CameraViewController.swift */,
+				8BE92A472282808A002ED420 /* CaptureManager.swift */,
 				8BD9B99F226A60B4003548CD /* Assets.xcassets */,
 				8B29413B227864D5007DCAC5 /* Assets.scnassets */,
 				8BD9B9A4226A60B4003548CD /* Info.plist */,
@@ -273,10 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD9B99B226A60B0003548CD /* ViewController.swift in Sources */,
+				8BE92A482282808A002ED420 /* CaptureManager.swift in Sources */,
 				8BCB40C8226F2C54000951F2 /* Plane.swift in Sources */,
 				8B29413A22781262007DCAC5 /* ColorPickViewController.swift in Sources */,
 				8BCB40CA226F2D8E000951F2 /* Utilities.swift in Sources */,
 				8BD9B997226A60B0003548CD /* AppDelegate.swift in Sources */,
+				8BFE51B2227AD77000722E6D /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
